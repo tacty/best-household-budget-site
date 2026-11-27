@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeLedger — Household Budget</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/">🏠 HomeLedger</a>
+    <nav class="mainnav" aria-label="Main">
+      <a href="#/" data-nav="dashboard">Dashboard</a>
+      <a href="#/planner" data-nav="planner">Budget Planner</a>
+      <a href="#/expenses" data-nav="expenses">Expenses</a>
+      <a href="#/goals" data-nav="goals">Savings Goals</a>
+      <a href="#/bills" data-nav="bills">Bills &amp; Subscriptions</a>
+    </nav>
+    <div class="month-switch" role="group" aria-label="Month">
+      <button id="monthPrev" type="button" aria-label="Previous month">‹</button>
+      <span id="monthLabel">November 2026</span>
+      <button id="monthNext" type="button" aria-label="Next month">›</button>
+    </div>
+  </div>
+</header>
+<main id="app" class="wrap"></main>
+<footer class="wrap foot">
+  <p><strong>HomeLedger</strong> — a household budget planner for the Alvarez family.
+  All figures are sample data stored only in your browser (localStorage). No account, no network, no fees.</p>
+  <p><button id="resetData" type="button" class="linkbtn">Reset sample data</button></p>
+</footer>
+</body>
+</html>
